@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}"/>
+    <meta charset="UTF-8">
+    <title>Unos</title>
+    
+</head>
+<center>
+<body>
+    <form action="{{ url_for('show_add') }}" method="POST">
+
+<h1>
+<ul><label>Radni nalog službe mašinske dijagnostike </label></ul>
+</h1>
+       
+<ul><label>Broj naloga</label></ul>
+<input name="order_number"  type="text" value="{{data[4][1]}}">
+
+<ul><label for="grupa">Radna grupa</label> </ul>
+<input name="order_number"  type="text" value="{{data[4][2]}}">
+
+
+<ul><label for="sort">Vrsta posla</label> </ul>
+<input name="order_number"  type="text" value="{{data[4][3]}}">
+
+
+
+
+<ul><label for="tip">Periodičnost posla</label> </ul>
+<input name="order_number"  type="text" value="{{data[4][4]}}">
+
+
+
+<ul><label for="sistem">Sistem</label></ul>
+<input name="order_number"  type="text" value="{{data[4][5]}}">
+
+<ul><label for="objekat">Objekat</label></ul>
+<input name="order_number"  type="text" value="{{data[4][6]}}">
+
+<ul><label for="location">Lokacija pogona</label></ul>
+<input name="order_number"  type="text" value="{{data[4][7]}}">
+
+<ul><label for="position">Pozicija pogona</label></ul>
+<input name="order_number"  type="text" value="{{data[4][8]}}">
+
+
+
+<ul><label for="machine">Mašina</label></ul>
+<input name="order_number"  type="text" value="{{data[4][9]}}">
+
+
+<ul><label for="orderer" >Nalog izdao</label> </ul>
+<input name="order_number"  type="text"  value="{{data[4][10]}}">
+
+
+
+
+
+<ul><label for="coment">Komentar naloga</label> </ul>
+<input name="order_number"  type="text" value="{{data[4][11]}}">
+
+
+
+
+
+<ul><label>Datum</label></ul>
+<input name="order_number"  type="text" value="{{data[4][12]}}">
+
+<ul><label for="reliser">Nalog primio</label> </ul>
+<input name="order_number"  type="text" value="{{data[4][13]}}">
+
+
+
+<ul><button type="submit">Kreiraj nalog</button></ul>
+
+
+</form>
+
+<br></br>
+
+<button type="button" onclick="window.location.href='{{ url_for('show_permanent')}}';">Baza radnih naloga</button>
+<button type="button" onclick="window.location.href='{{ url_for('home')}}';">Početna</button>
+
+</body>
+</center>
+</html>
